@@ -1,0 +1,12 @@
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\Basic-RPG-Game.csproj.AssemblyReference.cache
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\Basic-RPG-Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\Basic-RPG-Game.AssemblyInfoInputs.cache
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\Basic-RPG-Game.AssemblyInfo.cs
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\Basic-RPG-Game.csproj.CoreCompileInputs.cache
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\bin\Debug\net6.0\Basic-RPG-Game.deps.json
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\bin\Debug\net6.0\Basic-RPG-Game.dll
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\bin\Debug\net6.0\Basic-RPG-Game.pdb
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\Basic-RPG-Game.dll
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\refint\Basic-RPG-Game.dll
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\Basic-RPG-Game.pdb
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\Basic-RPG-Game\obj\Debug\net6.0\ref\Basic-RPG-Game.dll
