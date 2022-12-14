@@ -5,10 +5,40 @@
         <RootNamespace>Basic_RPG_Game</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-    </PropertyGroup>
+        </PropertyGroup>
+    
 
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     </ItemGroup>
+    
+
+    <ItemGroup>
+      <Content Include="bin\Debug\net6.0\Basic-RPG-Game.deps.json" />
+      <Content Include="bin\Debug\net6.0\Basic-RPG-Game.dll" />
+      <Content Include="bin\Debug\net6.0\Basic-RPG-Game.pdb" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <Folder Include="bin\Debug" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <Compile Remove="bin\Debug\net6.0\**" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <EmbeddedResource Remove="bin\Debug\net6.0\**" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <None Remove="bin\Debug\net6.0\**" />
+    </ItemGroup>
+    
+    
 
 </Project>
