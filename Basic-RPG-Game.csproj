@@ -39,6 +39,10 @@
       <None Remove="bin\Debug\net6.0\**" />
     </ItemGroup>
     
+    <ItemGroup>
+        <Content Include="bin\Debug\net6.0\weaponDictionary.json" />
+        <Content Include="src\resources\**" />
+    </ItemGroup>
     
 
 </Project>

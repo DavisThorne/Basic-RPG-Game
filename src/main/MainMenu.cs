@@ -1,4 +1,4 @@
-﻿namespace Basic_RPG_Game;
+﻿namespace Basic_RPG_Game.main;
 
 public class MainMenu
 {

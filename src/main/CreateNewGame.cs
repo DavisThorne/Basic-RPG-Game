@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using static System.IO.FileMode;
 
 namespace Basic_RPG_Game;
@@ -12,21 +13,15 @@ internal class CharacterInfo
     public string? Name { get; set; }
     public string? CharacterClass { get; set; }
     public int? Level { get; set; }
-    
     public int? Health { get; set; }
-    
     public int? InventorySize { get; set; }
-    
     public Dictionary<string, int> Stats { get; set; }
-    
     public Dictionary<string, Dictionary<string, int>> Inventory { get; set; }
 }
 
 internal class SaveData
 {
-    
     public string? SaveGameStage { get; set; }
-    
 }
 
 public static class CreateNewGame
@@ -97,20 +92,24 @@ public static class CreateNewGame
 
     private static void JsonParser(string characterClass, int level, string? name, string playerDataFullPath, string saveFullPath)
     {
+        var weaponDictionaryPath = $"{Directory.GetCurrentDirectory()}\\weaponDictionary.json";
         var stats = new Dictionary<string, int>();
         var inventory = new Dictionary<string, Dictionary<string, int>>();
-        var weaponProperties = new Dictionary<string, int>();
+        Console.WriteLine(weaponDictionaryPath);
+        
+        var weaponDictionary = JsonConvert.DeserializeObject(File.ReadAllText(weaponDictionaryPath))!.ToString();
+        var weaponJson = JObject.Parse(weaponDictionary!);
+        string weapon = weaponJson["Sword"]!.ToString();
+        Console.WriteLine(weapon);
+        
         switch (characterClass)
         {
             case "Warrior":
-                weaponProperties.Add("Damage", 10);
-                weaponProperties.Add("Durability", 100);
-                weaponProperties.Add("Weight", 10);
                 stats.Add("Strength", 10);
                 stats.Add("Dexterity", 5);
                 stats.Add("Intelligence", 3);
                 stats.Add("Vitality", 8);
-                inventory.Add("Copper Sword", weaponProperties);
+                //inventory.Add("Sword", ;
                 break;
             case "Mage":
                 stats.Add("Strength", 3);
@@ -156,6 +155,7 @@ public static class CreateNewGame
             fs.Write(json);
         }
         
+        
         Console.WriteLine($"Save Data Directory: {saveFullPath} \nPlayer Data Directory: {playerDataFullPath}");
     }
 
@@ -166,6 +166,3 @@ public static class CreateNewGame
         NameInput();
     }
 }
-
-//q: How to add properties to a json element
-//a: https://stackoverflow.com/questions/18138367/how-to-add-properties-to-a-json-element
